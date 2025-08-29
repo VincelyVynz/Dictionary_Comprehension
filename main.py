@@ -1,16 +1,11 @@
-# This is a sample Python script.
+# ---------------------------- Dictionary Comprehension ---------------------------- #
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+"""
 
+Used to create a new dictionary by shortening a for loop.
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+Syntax:
 
+    newdict = {key_expr: value_expr for item in iterable if condition == True}
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+"""
