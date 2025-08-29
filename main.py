@@ -8,6 +8,15 @@ Syntax:
 
     newdict = {key_expr: value_expr for item in iterable if condition == True}
 
+
+To invert a dictionary:
+
+    original = {'a': 1, 'b': 2}
+    inverted = {v: k for k, v in original.items()}
+
+    k - key
+    v - value
+
 """
 
 
