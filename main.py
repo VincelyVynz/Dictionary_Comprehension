@@ -45,3 +45,10 @@ alice_dict = {k : v for k, v in zip(titles, alice)}
 # alice_dict = dict(zip(titles, alice)
 
 print(alice_dict)
+
+#dictionary comprehension with if statement
+
+alice_dict_str = { k:v for k, v in zip(titles, alice) if type(v) is str}
+# Checking each v because the list-alice has both str and int, and type(alice) != str and will return nothing [type(alice) checks the whole list]
+
+print(alice_dict_str)
