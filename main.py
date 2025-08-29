@@ -1,5 +1,8 @@
 # ---------------------------- Dictionary Comprehension ---------------------------- #
 
+# importing pprint to print dictionaries in a readable way
+from pprint import pprint
+
 """
 
 Used to create a new dictionary by shortening a for loop.
@@ -30,7 +33,7 @@ new_dict = {
 
 inverted_dict = { v:k for k, v in new_dict.items() }
 
-print(inverted_dict)
+pprint(inverted_dict)
 
 
 # Creating a dictionary from two lists:
@@ -44,11 +47,20 @@ alice_dict = {k : v for k, v in zip(titles, alice)}
 # Shorter way to do the same:
 # alice_dict = dict(zip(titles, alice)
 
-print(alice_dict)
+pprint(alice_dict)
 
 #dictionary comprehension with if statement
 
 alice_dict_str = { k:v for k, v in zip(titles, alice) if type(v) is str}
 # Checking each v because the list-alice has both str and int, and type(alice) != str and will return nothing [type(alice) checks the whole list]
 
-print(alice_dict_str)
+pprint(alice_dict_str)
+
+
+# cartesian dict
+list_1 = ['a', 'b', 'c', 'd', 'e']
+list_2 = [1,2,3,4,5]
+
+cartesian_dict = {f"{x}{y}": (x, y) for x in list_1 for y in list_2}
+
+pprint(cartesian_dict)
