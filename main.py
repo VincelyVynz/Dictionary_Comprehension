@@ -35,7 +35,6 @@ inverted_dict = { v:k for k, v in new_dict.items() }
 
 pprint(inverted_dict)
 
-
 # Creating a dictionary from two lists:
 
 titles = ["name", "age", "city", "state", "country"]
