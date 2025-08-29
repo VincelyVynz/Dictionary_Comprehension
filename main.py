@@ -8,6 +8,15 @@ Syntax:
 
     newdict = {key_expr: value_expr for item in iterable if condition == True}
 
+
+To invert a dictionary:
+
+    original = {'a': 1, 'b': 2}
+    inverted = {v: k for k, v in original.items()}
+
+    k - key
+    v - value
+
 """
 
 
@@ -25,3 +34,14 @@ print(inverted_dict)
 
 
 # Creating a dictionary from two lists:
+
+titles = ["name", "age", "city", "state", "country"]
+
+alice = ["Alice", 22, "New York", "NY", "USA"]
+
+alice_dict = {k : v for k, v in zip(titles, alice)}
+
+# Shorter way to do the same:
+# alice_dict = dict(zip(titles, alice)
+
+print(alice_dict)
