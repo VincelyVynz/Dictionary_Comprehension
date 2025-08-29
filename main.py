@@ -61,6 +61,6 @@ pprint(alice_dict_str)
 list_1 = ['a', 'b', 'c', 'd', 'e']
 list_2 = [1,2,3,4,5]
 
-cartesian_dict = {f"{x}{y}": (x, y) for x in list_1 for y in list_2}
+cartesian_dict = {f"{x.upper()}{y}": (x, y) for x in list_1 for y in list_2}
 
 pprint(cartesian_dict)
